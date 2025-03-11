@@ -6,7 +6,7 @@ int main(){
     char estado, estado2;
     char codigo, codigo2, nomedacidade, nomedacidade2[20];
     int populacao, populacao2, numeropontoturistico, numeropontoturistico2;
-    float area, area2, pib, pib2;
+    float area, area2, pib, pib2, densidadepopulacional, densidadepopulacional2, pibpercapita, pibpercapita2;
 // neste codigo seram apreseentados duas cartas com suas respectivas informações.    
 //  printf para exibir as informações das cartas cadastradas de forma clara e organizada.
 //  scanf para exibir informações de entrada pelo teclado para cada variavel.    
@@ -26,8 +26,13 @@ printf("Carta 1\n");
     scanf("%f", &pib);
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &numeropontoturistico );
-
-printf("Carta 2 \n");
+// instrucão de entrada de calculos aritimeticos para Densidade Populacional e PIB per capita, carta1.
+    densidadepopulacional= (float)(populacao/area);
+    pibpercapita= (float)(pib/populacao);
+    printf("Densidade Populacional: %.2f\n", densidadepopulacional);
+    printf("PIB per capita: %.2f\n", pibpercapita);
+    printf("\n");
+    printf("Carta 2 \n");
     scanf("%c", &estado2);
     printf("Estado: ");
     scanf("%c", &estado2);
@@ -43,8 +48,12 @@ printf("Carta 2 \n");
     scanf("%f", &pib2);
     printf("Numero de Pontos Turisticos: ");
     scanf("%d\n", &numeropontoturistico2);
-
-    
+// instrucão de entrada de calculos aritimeticos para Densidade Populacional e PIB per capita, carta2.
+    densidadepopulacional2= (float)(populacao2/area2);
+    pibpercapita2= (float)(pib2/populacao2);
+    printf("Densidade Populacional: %.2f\n", densidadepopulacional2);
+    printf("PIB per capita: %.2f\n", pibpercapita2);
+  
     return 0;
     
 }
