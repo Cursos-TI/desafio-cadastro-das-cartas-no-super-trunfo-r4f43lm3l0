@@ -4,7 +4,7 @@
 int main(){
 
     char estado, estado2;
-    char codigo, codigo2, nomedacidade, nomedacidade2, carta1venceu, carta2venceu[30];
+    char codigo, codigo2, nomedacidade, nomedacidade2[30];
     int  numeropontoturistico, numeropontoturistico2;
     float area, area2, pib, pib2, densidadepopulacional, densidadepopulacional2, pibpercapita, pibpercapita2, superpoder, superpoder2;
     unsigned long int populacao, populacao2;
@@ -25,7 +25,7 @@ int main(){
     printf("Area:  ");
     scanf("%f", &area);
     printf("PIB: ");
-    scanf("%f", &pib);A
+    scanf("%f", &pib);
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &numeropontoturistico );
    
@@ -71,6 +71,13 @@ int main(){
     printf("Densidade Populacional:%d\n", densidadepopulacional > densidadepopulacional2 ); 
     printf("PIB per capita:%d\n", pibpercapita > pibpercapita2 );
     printf("Super Poder:%d\n", superpoder > superpoder2 );
+
+    if (pib > pib2){
+        printf("Carta1 venceu!");
+    } else {
+        printf("carta2 venceu!");
+    }
+
 
   
     return 0;
